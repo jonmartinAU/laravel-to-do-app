@@ -30,10 +30,8 @@ class WelcomeController extends Controller {
 	 */
 	public function index() 
 	{
-		$items = array('items' => ['Pack luggage', 'Go to airport','Arrive in San Juan']);
-		$test = array_values($items)[0][1];
-		dd($test);
-
+		$items = ['Pack luggage', 'Go to airport', 'Arrive in San Juan'];
+		\Log::debug($items);
 
 		return view('welcome'); 
 	}
