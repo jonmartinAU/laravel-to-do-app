@@ -31,7 +31,7 @@ class WelcomeController extends Controller {
 	public function index() 
 	{
 		$items = ['Pack luggage', 'Go to airport', 'Arrive in San Juan'];
-		\Log::debug($items);
+		\Log::info($items);
 
 		return view('welcome'); 
 	}
