@@ -15,6 +15,7 @@
 
   <body>
   	<h1>Welcome to your to-do list</h1>
+    <p>{{ $first }} {{ $last }}</p>
   </body>
 
 </html>
