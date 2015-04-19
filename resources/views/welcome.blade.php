@@ -1,6 +1,6 @@
 @extends('layouts.master') 
-@section('content')
 
+@section('content')
   	<h1>Welcome to your to-do list</h1>
     <ul>
       @forelse ($lists as $list)
@@ -9,3 +9,9 @@
         <li>You don't have any lists saved.</li>
       @endforelse
     </ul>
+@endsection
+
+@section('advertisement')
+  @parent
+  <p>Ad #2</p>
+@endsection

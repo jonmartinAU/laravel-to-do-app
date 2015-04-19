@@ -14,7 +14,17 @@
   </head>
 
 <body>
-  @yield('content')
+  <div class="container">
+    <div class="col-md-9">
+      @yield('content')
+	</div>
+    
+    <div class="col-md-3">
+      @section('advertisement')
+      <p>Ad #1</p>
+      @show 
+	</div>
+  </div>
 </body>
 
 </html>
