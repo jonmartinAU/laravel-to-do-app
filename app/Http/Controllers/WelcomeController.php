@@ -30,7 +30,8 @@ class WelcomeController extends Controller {
 	 */
 	public function index() 
 	{
-		return view('welcome')->with(['first' => 'Jon', 'last' => 'Martin']);
+		$lists = array('Vacation Planning', 'Grocery Shopping', 'Camping Trip');
+		return view('welcome')->with('lists', $lists);
 	}
 
 }

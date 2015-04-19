@@ -15,7 +15,14 @@
 
   <body>
   	<h1>Welcome to your to-do list</h1>
-    <p>{{ $first }} {{ $last }}</p>
+    <ul>
+      @foreach ($lists as $list)
+        <li>{{ $list }}</li> 
+      @empty
+        <li>You don't have any lists saved.</li>
+      @endforelse
+    </ul>
+
   </body>
 
 </html>
