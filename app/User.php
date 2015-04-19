@@ -1,4 +1,4 @@
-<?php namespace todoparrot;
+<?php namespace todoapp;
 
 use Illuminate\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;

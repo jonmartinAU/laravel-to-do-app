@@ -1,4 +1,4 @@
-<?php namespace todoparrot\Providers;
+<?php namespace todoapp\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -27,7 +27,7 @@ class AppServiceProvider extends ServiceProvider {
 	{
 		$this->app->bind(
 			'Illuminate\Contracts\Auth\Registrar',
-			'todoparrot\Services\Registrar'
+			'todoapp\Services\Registrar'
 		);
 	}
 

@@ -1,6 +1,6 @@
-<?php namespace todoparrot\Services;
+<?php namespace todoapp\Services;
 
-use todoparrot\User;
+use todoapp\User;
 use Validator;
 use Illuminate\Contracts\Auth\Registrar as RegistrarContract;
 

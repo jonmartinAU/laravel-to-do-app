@@ -1,4 +1,4 @@
-<?php namespace todoparrot\Http\Middleware;
+<?php namespace todoapp\Http\Middleware;
 
 use Closure;
 use Illuminate\Contracts\Auth\Guard;

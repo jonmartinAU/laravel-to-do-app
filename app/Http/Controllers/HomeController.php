@@ -1,4 +1,4 @@
-<?php namespace todoparrot\Http\Controllers;
+<?php namespace todoapp\Http\Controllers;
 
 class HomeController extends Controller {
 

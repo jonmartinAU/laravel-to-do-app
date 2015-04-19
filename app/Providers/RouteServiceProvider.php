@@ -1,4 +1,4 @@
-<?php namespace todoparrot\Providers;
+<?php namespace todoapp\Providers;
 
 use Illuminate\Routing\Router;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
@@ -12,7 +12,7 @@ class RouteServiceProvider extends ServiceProvider {
 	 *
 	 * @var string
 	 */
-	protected $namespace = 'todoparrot\Http\Controllers';
+	protected $namespace = 'todoapp\Http\Controllers';
 
 	/**
 	 * Define your route model bindings, pattern filters, etc.

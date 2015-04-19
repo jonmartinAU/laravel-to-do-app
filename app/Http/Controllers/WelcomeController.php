@@ -1,4 +1,4 @@
-<?php namespace todoparrot\Http\Controllers;
+<?php namespace todoapp\Http\Controllers;
 
 class WelcomeController extends Controller {
 
@@ -30,9 +30,6 @@ class WelcomeController extends Controller {
 	 */
 	public function index() 
 	{
-		$items = ['Pack luggage', 'Go to airport', 'Arrive in San Juan'];
-		\Log::info($items);
-
 		return view('welcome'); 
 	}
 

@@ -1,6 +1,6 @@
-<?php namespace todoparrot\Http\Controllers\Auth;
+<?php namespace todoapp\Http\Controllers\Auth;
 
-use todoparrot\Http\Controllers\Controller;
+use todoapp\Http\Controllers\Controller;
 use Illuminate\Contracts\Auth\Guard;
 use Illuminate\Contracts\Auth\Registrar;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;

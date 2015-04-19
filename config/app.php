@@ -139,11 +139,11 @@ return [
 		/*
 		 * Application Service Providers...
 		 */
-		'todoparrot\Providers\AppServiceProvider',
-		'todoparrot\Providers\BusServiceProvider',
-		'todoparrot\Providers\ConfigServiceProvider',
-		'todoparrot\Providers\EventServiceProvider',
-		'todoparrot\Providers\RouteServiceProvider',
+		'todoapp\Providers\AppServiceProvider',
+		'todoapp\Providers\BusServiceProvider',
+		'todoapp\Providers\ConfigServiceProvider',
+		'todoapp\Providers\EventServiceProvider',
+		'todoapp\Providers\RouteServiceProvider',
 		'Barryvdh\Debugbar\ServiceProvider',
 	],
 

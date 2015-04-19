@@ -1,4 +1,4 @@
-<?php namespace todoparrot\Exceptions;
+<?php namespace todoapp\Exceptions;
 
 use Exception;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;

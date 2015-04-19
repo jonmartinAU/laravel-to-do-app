@@ -1,4 +1,4 @@
-<?php namespace todoparrot\Console\Commands;
+<?php namespace todoapp\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Foundation\Inspiring;

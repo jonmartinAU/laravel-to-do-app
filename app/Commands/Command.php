@@ -1,4 +1,4 @@
-<?php namespace todoparrot\Commands;
+<?php namespace todoapp\Commands;
 
 abstract class Command {
 
