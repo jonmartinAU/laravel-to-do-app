@@ -10,10 +10,6 @@
       @endforelse
     </ul>
 
-  <table class="table borderless">
-    @include('partials.row')
-  </table>
-
 @endsection
 
 @section('advertisement')
