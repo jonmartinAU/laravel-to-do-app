@@ -3,8 +3,12 @@
   <head>
     <meta charset="UTF-8">
     <title>Welcome to To-Do list</title>
+    <link rel="stylesheet" href="css/app.css">
+
+
     <style>
-	@import url(//fonts.googleapis.com/css?family=Lato:700);
+  	@import url(//fonts.googleapis.com/css?family=Lato:700);
+
       body {
         margin:0;
         font-family:'Lato', sans-serif;

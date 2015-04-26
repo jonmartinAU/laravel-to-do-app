@@ -14,6 +14,7 @@
 
 @section('advertisement')
   @parent
-  <p>Ad #2</p>
+  <p><a href="#"
+  class="btn btn-success">Button</a></p>
 @endsection
 
