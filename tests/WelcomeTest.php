@@ -8,30 +8,12 @@
  	{
 	 	$client = new Client();
 
-	 	$crawler = $client->request('GET', 'http://homestead.app/');
+	 	$crawler = $client->request('GET', 'http://dev.todoparrot.com/');
 
 	 	$this->assertEquals(200, $client->getResponse()->getStatus()); 
 	 	$this->assertCount(1,
 
-	 	$crawler->filter('h1:contains("Welcome to TODOParrot")'));
+	 	$crawler->filter('h1:contains("Welcome to your to-do list")'));
  	}
-
- 	public function testUserClicksContactLinkAndIsTakenToContactPage()
- 	{
-		$client = new Client();
-
-		$crawler = $client->request('GET', 'http://homestead.app/');
-
-		$link = $crawler->selectLink('Contact Us')->link(); 
-		$this->assertEquals('http://homestead.app/about/contact',
-
-		$link->getUri());
-
-		$crawler = $client->click($link);
-
-		$this->assertCount(1,
-
-		$crawler->filter('h1:contains("Contact Us")'));
-	}
 
 }
