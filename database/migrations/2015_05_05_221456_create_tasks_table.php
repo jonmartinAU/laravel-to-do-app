@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AddNoteToTasksTable extends Migration {
+class CreateTasksTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,12 +12,12 @@ class AddNoteToTasksTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::table('todolists', function(Blueprint $table) 
+		Schema::create('tasks', function(Blueprint $table)
 		{
-		$table->string('note')->after('description');
+			$table->increments('id');
+			$table->timestamps();
 		});
 	}
-
 
 	/**
 	 * Reverse the migrations.
@@ -26,9 +26,7 @@ class AddNoteToTasksTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::table('todolists', function(Blueprint $table) {
-	    $table->dropColumn('note');
-	});
+		Schema::drop('tasks');
 	}
 
 }
