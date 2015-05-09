@@ -6,7 +6,8 @@ class Todolist extends Model {
 
 	private $rules = [
 		'name' => 'required', 
-		'description' => 'required'
+		'description' => 'required',
+		'email' => 'required|email|unique:users'
 	];
 
 }
