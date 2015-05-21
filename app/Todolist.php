@@ -10,4 +10,11 @@ class Todolist extends Model {
 		'email' => 'required|email|unique:users'
 	];
 
+	public function validate()
+	{
+		$v = \Validator::make($this->attributes, $this->rules); if ($v->passes()) return true;
+		$this->errors = $v->messages();
+		return false;
+	} 
+
 }
