@@ -12,7 +12,8 @@ class Todolist extends Model {
 
 	public function validate()
 	{
-		$v = \Validator::make($this->attributes, $this->rules); if ($v->passes()) return true;
+		$v = \Validator::make($this->attributes, $this->rules); 
+		if ($v->passes()) return true;
 		$this->errors = $v->messages();
 		return false;
 	} 
